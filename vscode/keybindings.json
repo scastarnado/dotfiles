@@ -1,0 +1,72 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+1",
+		"command": "moveActiveEditor",
+		"args": {
+			"to": "first",
+			"by": "tab"
+		}
+	},
+	{
+		"key": "ctrl+2",
+		"command": "moveActiveEditor",
+		"args": {
+			"to": "position",
+			"value": 2,
+			"by": "tab"
+		}
+	},
+	{
+		"key": "ctrl+3",
+		"command": "moveActiveEditor",
+		"args": {
+			"to": "position",
+			"value": 3,
+			"by": "tab"
+		}
+	},
+	{
+		"key": "ctrl+4",
+		"command": "moveActiveEditor",
+		"args": {
+			"to": "position",
+			"value": 4,
+			"by": "tab"
+		}
+	},
+	{
+		"key": "alt+1",
+		"command": "workbench.action.openEditorAtIndex1"
+	},
+	{
+		"key": "alt+2",
+		"command": "workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "alt+3",
+		"command": "workbench.action.openEditorAtIndex3"
+	},
+	{
+		"key": "alt+4",
+		"command": "workbench.action.openEditorAtIndex4"
+	},
+
+	{
+		"key": "alt+q",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "alt+q",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	}
+]

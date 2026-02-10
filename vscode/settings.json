@@ -1,0 +1,224 @@
+{
+	// ====== EDITOR CORE SETTINGS ======
+	"editor.lineNumbers": "relative",
+	"editor.cursorStyle": "block",
+	"editor.cursorSurroundingLines": 10,
+	"editor.minimap.enabled": false,
+	"editor.smoothScrolling": true,
+	"editor.linkedEditing": true,
+	"editor.renderLineHighlight": "none",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.stickyScroll.enabled": false,
+	"editor.autoClosingBrackets": "always",
+	"editor.unicodeHighlight.allowedCharacters": {},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/vendor": true,
+		"**/.git": true
+	},
+	"editor.autoClosingQuotes": "always",
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"editor.suggestSelection": "first",
+
+	// ====== FORMATTING SETTINGS ======
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "explicit"
+	},
+	"prettier.endOfLine": "auto",
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.experimentalTernaries": true,
+
+	// ====== LANGUAGE-SPECIFIC FORMATTERS ======
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[plaintext]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[blade]": {
+		"editor.defaultFormatter": "shufo.vscode-blade-formatter"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+	},
+	"[snippets]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+
+	// ====== FONT SETTINGS ======
+	"editor.fontFamily": "'Fira Code'",
+	"editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
+	"terminal.integrated.fontFamily": "monospace",
+
+	// ====== WORKBENCH UI SETTINGS ======
+	"workbench.colorTheme": "One Dark Pro Darker",
+	"workbench.startupEditor": "none",
+	"workbench.editor.enablePreview": false,
+	"workbench.statusBar.visible": true,
+	"workbench.sideBar.location": "right",
+	"workbench.activityBar.location": "top",
+	"workbench.panel.defaultLocation": "bottom",
+	"workbench.list.smoothScrolling": true,
+	"workbench.settings.applyToAllProfiles": [
+		"pythonIndent.trimLinesWithOnlyWhitespace",
+		"pythonIndent.keepHangingBracketOnLine"
+	],
+	"window.menuBarVisibility": "compact",
+	"breadcrumbs.enabled": true,
+
+	// ====== VIM EXTENSION SETTINGS ======
+	"vim.leader": "<space>",
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.sneak": true,
+	"vim.digraphs": {},
+	"vim.commandLineModeKeyBindings": [],
+
+	// ====== VIM KEYBINDINGS ======
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<tab>"],
+			"commands": ["workbench.action.nextEditor"]
+		},
+		{
+			"before": ["<S-tab>"],
+			"commands": ["workbench.action.previousEditor"]
+		}
+	],
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		},
+		{
+			"before": ["<C-j>"],
+			"after": ["<Esc>"]
+		},
+		{
+			"before": ["<C-k>"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"after": [">", "g", "v"]
+		},
+		{
+			"before": ["<"],
+			"after": ["<", "g", "v"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<C-n>"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.splitEditor"]
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", "f"],
+			"commands": ["revealInExplorer"]
+		},
+		{
+			"before": ["<leader>", "h"],
+			"after": ["_"]
+		},
+		{
+			"before": ["<leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<leader>", "o"],
+			"after": ["o", "<Esc>", "0"]
+		},
+		{
+			"before": ["<leader>", "O"],
+			"after": ["i", "<CR>", "<Esc>", "0", "k", "i"]
+		}
+	],
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false,
+		"<C-d>": false,
+		"<C-c>": false,
+		"<C-x>": false,
+		"<C-v>": false,
+		"<C-z>": false,
+		"<C-y>": false
+	},
+
+	// ====== FILE MANAGEMENT ======
+	"files.autoSave": "afterDelay",
+	"files.associations": {
+		"*.py": "python"
+	},
+	"explorer.confirmDelete": false,
+
+	// ====== GIT SETTINGS ======
+	"git.autofetch": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+
+	// ====== REMOTE SSH SETTINGS ======
+	"remote.SSH.remotePlatform": {
+		"opplatform": "linux",
+		"idpsrvinv": "linux",
+		"idpsrvapps": "linux",
+		"idpsignatures": "linux",
+		"OPPlatform": "linux",
+		"192.168.2.4": "linux",
+		"192.168.2.240": "linux"
+	},
+	"remote.SSH.connectTimeout": 60,
+	"remote.SSH.showLoginTerminal": true,
+
+	// ====== TERMINAL SETTINGS ======
+	"terminal.integrated.smoothScrolling": true,
+	"terminal.integrated.gpuAcceleration": "on",
+
+	// ====== EXTENSIONS SETTINGS ======
+	"extensions.autoUpdate": true,
+	"extensions.ignoreRecommendations": true,
+	"notebook.defaultFormatter": "esbenp.prettier-vscode",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"update.showReleaseNotes": false,
+
+	// ====== GITHUB COPILOT ======
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.selectedCompletionModel": "",
+
+	// ====== LINTING SETTINGS ======
+	"eslint.codeActionsOnSave.rules": null,
+	"eslint.quiet": true,
+
+	// ====== SECURITY SETTINGS ======
+	"security.workspace.trust.untrustedFiles": "open"
+}
