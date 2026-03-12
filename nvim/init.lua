@@ -6,6 +6,7 @@ vim.o.breakindent = true -- keep indentation that are "changed" when wrap acts
 vim.o.tabstop = 2 -- use two characters when tabbing
 vim.o.shiftwidth = 2 -- value that nvim uses to indent a line
 vim.o.expandtab = true -- transform tabs into spaces
+vim.o.scrolloff = 10 -- screen lines to keep above or below the cursor
 
 vim.g.mapleader = ' ' -- set the leader key to space
 
