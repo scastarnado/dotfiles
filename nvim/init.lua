@@ -56,10 +56,10 @@ local silent = { silent = true }
 map({ "n", "v" }, "<Space>", "<Nop>", silent)
 map("n", "<Esc>", "<cmd>nohlsearch<cr>", { desc = "Clear search highlight" })
 map("n", "<leader>w", "<cmd>write<cr>", { desc = "Save file" })
-map("n", "<leader>q", "<cmd>quit<cr>", { desc = "Quit window" })
+map("n", "<leader>qq", "<cmd>quit<cr>", { desc = "Quit window" })
 map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit Neovim" })
-map("n", "<leader>x", "<cmd>bdelete<cr>", { desc = "Close buffer" })
-map("n", "<leader>X", "<cmd>bdelete!<cr>", { desc = "Force-close buffer" })
+map("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Close buffer" })
+map("n", "<leader>bD", "<cmd>bdelete!<cr>", { desc = "Force-close buffer" })
 
 map("n", "<C-h>", "<C-w>h", { desc = "Focus left window" })
 map("n", "<C-j>", "<C-w>j", { desc = "Focus lower window" })
@@ -329,9 +329,11 @@ require("lazy").setup({
       preset = "modern",
       delay = 300,
       spec = {
-        { "<leader>c", group = "code" }, { "<leader>f", group = "find" },
+        { "<leader>b", group = "buffer" }, { "<leader>c", group = "code" },
+        { "<leader>f", group = "find" },
         { "<leader>g", group = "git" }, { "<leader>h", group = "hunks/harpoon" },
-        { "<leader>t", group = "toggle/terminal" }, { "<leader>x", group = "diagnostics" },
+        { "<leader>q", group = "quit/session" }, { "<leader>t", group = "toggle/terminal" },
+        { "<leader>x", group = "diagnostics" },
       },
     },
   },
@@ -375,7 +377,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     lmap("n", "gi", vim.lsp.buf.implementation, "Go to implementation")
     lmap("n", "gy", vim.lsp.buf.type_definition, "Go to type definition")
     lmap("n", "K", vim.lsp.buf.hover, "Hover documentation")
-    lmap("n", "<C-k>", vim.lsp.buf.signature_help, "Signature help")
+    lmap("n", "<leader>ck", vim.lsp.buf.signature_help, "Signature help")
     lmap("n", "<leader>cr", vim.lsp.buf.rename, "Rename symbol")
     lmap({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "Code action")
     lmap("n", "<leader>cl", "<cmd>LspInfo<cr>", "LSP information")
